@@ -15,10 +15,10 @@
       <button mat-menu-item>Gift Cards</button>
     </mat-menu>
     <mat-menu #men="matMenu">
-      <button mat-menu-item>Topwear</button>
-      <button mat-menu-item>Indian & Festive Wear</button>
-      <button mat-menu-item>Bottomwear</button>
-      <button mat-menu-item>Innerwear & Sleepwear</button>
+      <button mat-menu-item routerLink="/mentopwear">Topwear</button>
+      <button mat-menu-item routerLink="/menfestivewear">Indian & Festive Wear</button>
+      <button mat-menu-item routerLink="/menbottomwear">Bottomwear</button>
+      <button mat-menu-item routerLink="/mensleepwear">Innerwear & Sleepwear</button>
       <button mat-menu-item>Plus Size</button>
       <button mat-menu-item>Footwear</button>
       <button mat-menu-item>Personal Care & Grooming</button>
@@ -88,7 +88,7 @@
       <button mat-menu-item>Top Brands</button>
     </mat-menu>
   </button>
-  <span>Myntra</span>
+  <span><button mat-button routerLink="/myntrahome">Myntra</button></span>
   <span class="example-spacer"></span>
   <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
     <mat-icon>favorite</mat-icon>
@@ -99,9 +99,11 @@
 </mat-toolbar>
 </div>
 <div>
-  <span>
+  <!-- <span>
     <button mat-icon-button class="example-icon" aria-label="Example icon-button with search icon">
       <mat-icon>search</mat-icon>
     </button>
-  </span>
+  </span> -->
 </div>
+
+<router-outlet></router-outlet>
